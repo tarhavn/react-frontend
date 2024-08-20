@@ -1,6 +1,7 @@
 import './App.css';
 import React, { Component } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import NavBar from './NavBar';
 import AboutPage from './pages/AboutPage';
 import ArticlePage from './pages/ArticlePage';
 import ArticlesListPage from './pages/ArticlesListPage'
@@ -11,7 +12,7 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div className="App">
-        <h1>My Awesome Blog</h1>
+        <NavBar />
         <div id="page-body">
           <Routes>
             <Route path='/about' element={<AboutPage />} />
