@@ -18,7 +18,7 @@ h3, h4 {
 }
 
 nav {
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid rgb(52, 39, 230);
   text-align: center;
   position: fixed;
   top: 0;
