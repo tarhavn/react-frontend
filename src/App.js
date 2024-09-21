@@ -7,6 +7,8 @@ import ArticlePage from './pages/ArticlePage';
 import ArticlesListPage from './pages/ArticlesListPage'
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
+import LoginPage from './pages/LoginPage';
+import CreateAccountPage from './pages/CreateAccountPage';
 
 class App extends Component {
   render() {
@@ -20,6 +22,8 @@ class App extends Component {
             <Route path='/articles/:articleId' element={<ArticlePage />} />
             <Route path='/articles' element={<ArticlesListPage />} />
             <Route path='/' element={<HomePage />} />
+            <Route path='/login' element={<LoginPage />} />
+            <Route path='/create-account' element={<CreateAccountPage />} />
             <Route path='*' element={<NotFoundPage />} />
           </Routes>
         </div>
